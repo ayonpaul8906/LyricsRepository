@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Lyrics Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Song Lyrics Collection</h1>
+    </header>
+    <main>
+        <section id="song-list">
+            <!-- Song titles will dynamically load here -->
+        </section>
+        <button id="add-song-btn" class="add-btn">+ Add New Song</button>
+    </main>
+
+    <!-- Modal for Viewing Song Lyrics -->
+    <div id="song-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-button">&times;</span>
+            <h2 id="song-title"></h2>
+            <p id="song-date"></p>
+            <pre id="song-lyrics"></pre>
+        </div>
+    </div>
+
+    <!-- Modal for Adding New Song -->
+    <div id="add-song-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-add-modal" class="close-button">&times;</span>
+            <h2>Add New Song</h2>
+            <form id="add-song-form">
+                <label for="song-title-input">Title:</label>
+                <input type="text" id="song-title-input" name="title" required>
+
+                <label for="song-date-input">Date of Writing:</label>
+                <input type="date" id="song-date-input" name="date" required>
+
+                <label for="song-lyrics-input">Lyrics:</label>
+                <textarea id="song-lyrics-input" name="lyrics" rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">Add Song</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -32,7 +32,7 @@ Lyrics Repository is a centralized platform for storing, exploring, and enjoying
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Lyrics Repository](https://i.postimg.cc/N0csL0tz/Lyrics.png)
 
 
 ## 📋 How to Use

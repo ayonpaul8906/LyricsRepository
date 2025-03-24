@@ -42,6 +42,24 @@ Lyrics Repository is a centralized platform for storing, exploring, and enjoying
 3. 👆 Click on any song title to view the complete lyrics.
 4. 💬 Enjoy and explore more lyrics.
 
+## Installation and Usage
+
+To run this project locally, follow these steps:
+
+### 1. Clone the Repository  
+Open your terminal and execute the following command:  
+
+```bash
+git clone https://github.com/ayonpaul8906/LyricsRepository.git
+```
+### 2. Navigate to the Project Directory
+Move into the project folder:
+
+```bash
+cd LyricsRepository
+```
+### 3. Open the Index File
+Launch the **index.html** file in your preferred web browser to start exploring the lyrics collection.
 
 ## 🤝 Contributing
 

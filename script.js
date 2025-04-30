@@ -99,4 +99,27 @@ document.getElementById("close-modal").addEventListener("click", () => {
     document.getElementById("song-modal").style.display = "none";
 });
 
+// Open Add Song modal when clicking the Add button
+document.getElementById("add-song-btn").addEventListener("click", openAddSongModal);
 
+// Close Add Song modal when clicking the close button
+document.getElementById("close-add-modal").addEventListener("click", closeAddSongModal);
+
+// Handle form submission for adding new song
+document.getElementById("add-song-form").addEventListener("submit", addNewSong);
+
+// Close modals when clicking outside the modal content
+window.addEventListener("click", (event) => {
+    const songModal = document.getElementById("song-modal");
+    const addModal = document.getElementById("add-song-modal");
+    if (event.target === songModal) {
+        songModal.style.display = "none";
+    }
+    if (event.target === addModal) {
+        addModal.style.display = "none";
+        document.getElementById("add-song-form").reset();
+    }
+});
+
+// Initialize the song list on page load
+window.onload = loadSongs;
